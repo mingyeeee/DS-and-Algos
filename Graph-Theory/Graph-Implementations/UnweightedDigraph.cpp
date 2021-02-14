@@ -1,5 +1,5 @@
 /* Mingye Chen 2021-02-14
- * basic unweighted digraph using vectors and 
+ * basic unweighted digraph using adjacency list and vectors
  */
 #include <bits/stdc++.h>
 using namespace std;
