@@ -31,7 +31,7 @@ vector<int> BFS(int src, int dst, UnweightedDigraph& graph, int N){
     // visited list
     vector<bool> visited(N, false);
     visited[src] = true;
-    // index is the node and the value in the index is the parent node
+    // parent_nodes index is the node id and the value at the index is the parent node (node that came before it)
     // -1 as null, NULL is 0 which gets confused with a purposeful 0
     vector<int> parent_nodes(N, -1);
     //cout << "starting loop" << endl;
