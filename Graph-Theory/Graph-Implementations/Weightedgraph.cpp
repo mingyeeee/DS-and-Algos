@@ -1,5 +1,5 @@
 /* Mingye Chen 2021-02-14
- * basic weighted digraph using adjacency list and vectors
+ * basic weighted graph using adjacency list and vectors
  */
 #include <bits/stdc++.h>
 using namespace std;
