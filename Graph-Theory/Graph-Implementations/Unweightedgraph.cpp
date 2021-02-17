@@ -1,14 +1,14 @@
 /* Mingye Chen 2021-02-14
- * basic unweighted digraph using adjacency list and vectors
+ * basic unweighted graph using adjacency list and vectors
  */
 #include <bits/stdc++.h>
 using namespace std;
 
-class UnweightedDigraph{
+class Unweightedgraph{
 public:
     // adjacency list 
     vector<vector<int>> adj_list;
-    UnweightedDigraph(vector<vector<int>> edge_def, int n_nodes){
+    Unweightedgraph(vector<vector<int>> edge_def, int n_nodes){
         adj_list.resize(n_nodes);
         // populate adjacency lists 
         for(int i = 0; i < edge_def.size(); i++){
@@ -33,7 +33,7 @@ int main(){
     {
         {0,1}, {0,4}, {1,4}, {1,3}, {1,2}, {2,3}
     };
-    UnweightedDigraph uwdigraph(edge_def, 5);
-    uwdigraph.print_adj_list();
+    Unweightedgraph uwgraph(edge_def, 5);
+    uwgraph.print_adj_list();
     return 1;
 }
